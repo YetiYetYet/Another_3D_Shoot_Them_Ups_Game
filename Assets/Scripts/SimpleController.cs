@@ -39,6 +39,9 @@ public class SimpleController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            animator.SetInteger("SkillNumber", 0);
+            animator.SetTrigger("PlaySkill");
+            //Instantiate();
             Enemy.Instance.TakeDamage(10);
         }
     }
