@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -31,6 +32,14 @@ public class SimpleController : MonoBehaviour
         else
         {
             animator.SetBool("IsMoving", false);
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Enemy.Instance.TakeDamage(10);
         }
     }
 }
