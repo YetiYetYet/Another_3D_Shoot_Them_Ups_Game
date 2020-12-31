@@ -256,19 +256,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 1
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Die
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hurt
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -644,15 +644,15 @@ AnimatorStateMachine:
   - {fileID: -8797312939915414844}
   - {fileID: 7891742341573664514}
   m_StateMachineTransitions:
-  - first: {fileID: 9102683803438501263}
-    second:
-    - {fileID: 2930840049925365224}
-  - first: {fileID: 7769580189214524173}
-    second:
-    - {fileID: -4120285117126311516}
   - first: {fileID: 2957478337377803931}
     second:
     - {fileID: 6630841391675536737}
+  - first: {fileID: 7769580189214524173}
+    second:
+    - {fileID: -4120285117126311516}
+  - first: {fileID: 9102683803438501263}
+    second:
+    - {fileID: 2930840049925365224}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
@@ -958,7 +958,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Hurt
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 55933015562968246}

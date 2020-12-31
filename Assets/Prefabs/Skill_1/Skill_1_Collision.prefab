@@ -9417,7 +9417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &480298
 Transform:
   m_ObjectHideFlags: 0
@@ -9549,7 +9549,7 @@ GameObject:
   - component: {fileID: 406484}
   - component: {fileID: 114708609098919934}
   m_Layer: 0
-  m_Name: Effect1_Collision
+  m_Name: Skill_1_Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9794,7 +9794,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4786833572791172
 Transform:
   m_ObjectHideFlags: 0
