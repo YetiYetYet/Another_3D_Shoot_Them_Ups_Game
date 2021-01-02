@@ -9,7 +9,8 @@ public class UiManager : MonoBehaviour
     public Slider lifeEnemyBar;
     public Text lifeEnemyText;
     public Text maxLifeEnemyText;
-    
+
+    private Player _player;
     public Slider lifePlayerBar;
     public Text lifePlayerText;
     public Text maxLifePlayerText;
@@ -24,6 +25,11 @@ public class UiManager : MonoBehaviour
         lifeEnemyText.text = _enemy.hitPointsPerStates.ToString();
         maxLifeEnemyText.text = _enemy.hitPointsPerStates.ToString();
         
+        _player = Player.Instance;
+        lifePlayerBar.maxValue = _player.maxHealth;
+        lifeEnemyBar.value = _player.health;
+        lifePlayerText.text = _player.health.ToString();
+        maxLifePlayerText.text = _player.maxHealth.ToString();
     }
 
     // Update is called once per frame
@@ -31,5 +37,8 @@ public class UiManager : MonoBehaviour
     {
         lifeEnemyBar.value = _enemy.actualLife;
         lifeEnemyText.text = _enemy.actualLife.ToString();
+
+        lifePlayerBar.value = _player.health;
+        lifePlayerText.text = _player.health.ToString();
     }
 }

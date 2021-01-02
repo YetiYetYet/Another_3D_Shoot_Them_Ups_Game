@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Enemy : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Enemy : MonoBehaviour
     public bool lookAtPlayer = true;
     public GameObject lookedObject;
 
+    public static event Action<Enemy> NextState;
+    public static event Action<Enemy> Die;
 
 
     // Start is called before the first frame update
@@ -64,9 +67,12 @@ public class Enemy : MonoBehaviour
                 actualLife = hitPointsPerStates;
                 animator.SetInteger("State", currentState);
                 animator.SetTrigger("Hurt");
+                
+                NextState?.Invoke(this);
             }
             else
             {
+                Die?.Invoke(this);
                 Debug.Log("Victory");
             }
         }

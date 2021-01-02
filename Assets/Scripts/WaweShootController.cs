@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 public class WaweShootController : MonoBehaviour
 {
-    public int stateID;
-    public List<UbhBaseShot> UbhBaseShotsChild;
+    [ReadOnly]
+    private List<UbhBaseShot> UbhBaseShotsChild;
+    [ReadOnly]
     public int actualShotCtrlIndex;
     private void Start()
     {
         UbhBaseShotsChild = new List<UbhBaseShot>();
-        Debug.Log(gameObject.GetComponentsInChildren<UbhBaseShot>().Length);
+        //Debug.Log(gameObject.GetComponentsInChildren<UbhBaseShot>().Length);
         foreach (var ubhShotCtrl in gameObject.GetComponentsInChildren<UbhBaseShot>())
         {
             UbhBaseShotsChild.Add(ubhShotCtrl);
@@ -37,7 +39,7 @@ public class WaweShootController : MonoBehaviour
 
     public void NextPattern()
     {
-        Debug.Log("NextPatternCall");
+        //Debug.Log("NextPatternCall");
         UbhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(false);
         actualShotCtrlIndex++;
         if (actualShotCtrlIndex > UbhBaseShotsChild.Count-1)

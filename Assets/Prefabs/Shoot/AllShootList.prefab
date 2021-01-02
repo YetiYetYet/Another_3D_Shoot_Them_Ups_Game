@@ -1,0 +1,1873 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1188575202845733862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575202845568966}
+  - component: {fileID: 1188575202852292102}
+  m_Layer: 0
+  m_Name: SpiralMulti4WayShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575202845568966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575202845733862}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575202852292102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575202845733862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44726332cc3921347a0036df4d6330c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 450
+  m_bulletSpeed: 2.2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_spiralWayNum: 3
+  m_wayNum: 4
+  m_startAngle: 90
+  m_shiftAngle: 5
+  m_betweenAngle: 10
+  m_nextLineDelay: 0.1
+--- !u!1 &1188575202880330348
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575202880161356}
+  - component: {fileID: 1188575202874322828}
+  m_Layer: 0
+  m_Name: OverTakeCurve8WayLockOnShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575202880161356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575202880330348}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575202874322828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575202880330348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 565d156b217124905940b7eed260e359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 80
+  m_bulletSpeed: 1
+  m_accelerationSpeed: 1
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 8
+  m_centerAngle: 0
+  m_betweenAngle: 15
+  m_diffSpeed: 0.5
+  m_shiftAngle: 2.5
+  m_nextLineDelay: 0.1
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+--- !u!1 &1188575203134236733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203133813789}
+  - component: {fileID: 1188575203123994077}
+  m_Layer: 0
+  m_Name: 20WayAccelAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203133813789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203134236733}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203123994077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203134236733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70962cc7743ab4dfa909076da4818d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 400
+  m_bulletSpeed: 1
+  m_accelerationSpeed: 5
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 20
+  m_centerAngle: 0
+  m_betweenAngle: 18
+  m_nextLineDelay: 0.1
+--- !u!1 &1188575203202482927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203202916047}
+  - component: {fileID: 1188575203191731983}
+  m_Layer: 0
+  m_Name: LinearAccelAimingShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203202916047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203202482927}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203191731983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203202482927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf8ed6458b22394b87b4d9583c1c642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 15
+  m_bulletSpeed: 1.5
+  m_accelerationSpeed: 5
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_angle: 180
+  m_betweenDelay: 0.1
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+  m_aiming: 1
+--- !u!1 &1188575203223827023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203223531119}
+  - component: {fileID: 1188575203212527535}
+  m_Layer: 0
+  m_Name: SpiralRightTurnShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203223531119
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203223827023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203212527535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203223827023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e529c4281f35345dfa6fe216b8a74985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 100
+  m_bulletSpeed: 1.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 100
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 1
+  m_autoReleaseTime: 3.5
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_startAngle: 270
+  m_shiftAngle: -10
+  m_betweenDelay: 0.075
+--- !u!1 &1188575203266643594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203266681514}
+  - component: {fileID: 1188575203260085098}
+  m_Layer: 0
+  m_Name: RandomAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203266681514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203266643594}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203260085098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203266643594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0c54cdcb002964283a78f5499e1a73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 200
+  m_bulletSpeed: 0
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_randomCenterAngle: 180
+  m_randomRangeSize: 360
+  m_randomSpeedMin: 2
+  m_randomSpeedMax: 3
+  m_randomDelayMin: 0
+  m_randomDelayMax: 0.05
+  m_evenlyDistribute: 1
+--- !u!1 &1188575203319933571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203320362659}
+  - component: {fileID: 1188575203309166435}
+  m_Layer: 0
+  m_Name: Waving3WayLockOnShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203320362659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203319933571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203309166435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203319933571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a728c2bf187e74bbc9c1878501d4255d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 300
+  m_bulletSpeed: 2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 3
+  m_waveCenterAngle: 180
+  m_waveRangeSize: 45
+  m_waveSpeed: 5
+  m_betweenAngle: 20
+  m_nextLineDelay: 0.075
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+  m_aiming: 0
+--- !u!1 &1188575203370351093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203370575317}
+  - component: {fileID: 1188575203359607829}
+  m_Layer: 0
+  m_Name: Spiral4WayShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203370575317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203370351093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203359607829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203370351093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 320a670ee8cf1d24993503ab3bc162a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 240
+  m_bulletSpeed: 2.2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 4
+  m_startAngle: 270
+  m_shiftAngle: -10
+  m_betweenAngle: 15
+  m_nextLineDelay: 0.1
+--- !u!1 &1188575203403694758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203403275910}
+  - component: {fileID: 1188575203393500998}
+  m_Layer: 0
+  m_Name: SpiralMultiLeftShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203403275910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203403694758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203393500998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203403694758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a525cc73830290d4d941ce8813eb2191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 400
+  m_bulletSpeed: 2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_spiralWayNum: 4
+  m_startAngle: 0
+  m_shiftAngle: 10
+  m_betweenDelay: 0.05
+--- !u!1 &1188575203486219516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203486441692}
+  - component: {fileID: 1188575203476523292}
+  m_Layer: 0
+  m_Name: HoleCircleLockOnShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203486441692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203486219516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203476523292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203486219516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349bf27932c90684ead74af527a019d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 60
+  m_bulletSpeed: 2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_holeCenterAngle: 180
+  m_holeSize: 15
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+--- !u!1 &1188575203685754706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203685399410}
+  - component: {fileID: 1188575203679703730}
+  m_Layer: 0
+  m_Name: SpiralMultiRightShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203685399410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203685754706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203679703730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203685754706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a525cc73830290d4d941ce8813eb2191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 400
+  m_bulletSpeed: 2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_spiralWayNum: 4
+  m_startAngle: 0
+  m_shiftAngle: -5
+  m_betweenDelay: 0.05
+--- !u!1 &1188575203752592949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203752761877}
+  - component: {fileID: 1188575203747083221}
+  m_Layer: 0
+  m_Name: 30WayAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203752761877
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203752592949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203747083221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203752592949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70962cc7743ab4dfa909076da4818d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 450
+  m_bulletSpeed: 2.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 30
+  m_centerAngle: 0
+  m_betweenAngle: 12
+  m_nextLineDelay: 0.1
+--- !u!1 &1188575203835391070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203835621502}
+  - component: {fileID: 1188575203842480574}
+  m_Layer: 0
+  m_Name: LinearLockOnShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203835621502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203835391070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203842480574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203835391070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cf8ed6458b22394b87b4d9583c1c642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: 1109e62242928964fa089052e6107caf, type: 3}
+  m_bulletNum: 15
+  m_bulletSpeed: 2.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_angle: 180
+  m_betweenDelay: 0.1
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+  m_aiming: 0
+--- !u!1 &1188575203975590761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203975425865}
+  - component: {fileID: 1188575203968485001}
+  m_Layer: 0
+  m_Name: RandomSpiralShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203975425865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203975590761}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575203968485001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203975590761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e968036783c87d4c86012fa6749ae49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 100
+  m_bulletSpeed: 0
+  m_accelerationSpeed: 2
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_startAngle: 180
+  m_shiftAngle: 5
+  m_randomRangeSize: 30
+  m_randomSpeedMin: 2
+  m_randomSpeedMax: 2
+  m_randomDelayMin: 0.01
+  m_randomDelayMax: 0.05
+--- !u!1 &1188575203992413119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575203992413118}
+  m_Layer: 0
+  m_Name: AllShootList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575203992413118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575203992413119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1188575203975425865}
+  - {fileID: 1188575204362231039}
+  - {fileID: 5640226517006204063}
+  - {fileID: 1188575204689030019}
+  - {fileID: 1188575203266681514}
+  - {fileID: 1188575204154460807}
+  - {fileID: 1188575204667899091}
+  - {fileID: 1188575203486441692}
+  - {fileID: 1188575202880161356}
+  - {fileID: 1188575204108971448}
+  - {fileID: 1188575203320362659}
+  - {fileID: 1188575203370575317}
+  - {fileID: 1188575204279417292}
+  - {fileID: 1188575203133813789}
+  - {fileID: 1188575204390528139}
+  - {fileID: 1188575203752761877}
+  - {fileID: 1188575204378078292}
+  - {fileID: 1188575204918975027}
+  - {fileID: 1188575203223531119}
+  - {fileID: 1188575202845568966}
+  - {fileID: 1188575203403275910}
+  - {fileID: 1188575203685399410}
+  - {fileID: 1188575204067960459}
+  - {fileID: 1188575204765874326}
+  - {fileID: 1188575203835621502}
+  - {fileID: 1188575203202916047}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1188575204067605163
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204067960459}
+  - component: {fileID: 1188575204077801291}
+  m_Layer: 0
+  m_Name: SpiralLeftShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204067960459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204067605163}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204077801291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204067605163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e529c4281f35345dfa6fe216b8a74985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 300
+  m_bulletSpeed: 0.75
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_startAngle: 180
+  m_shiftAngle: 11
+  m_betweenDelay: 0.01
+--- !u!1 &1188575204109398424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204108971448}
+  - component: {fileID: 1188575204103373944}
+  m_Layer: 0
+  m_Name: Waving8WayAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204108971448
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204109398424}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204103373944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204109398424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b6867f3c741c46ff8be2f867f89d316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 400
+  m_bulletSpeed: 2.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 8
+  m_waveCenterAngle: 0
+  m_waveRangeSize: 70
+  m_waveSpeed: 6
+  m_betweenAngle: 45
+  m_nextLineDelay: 0.075
+--- !u!1 &1188575204154103463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204154460807}
+  - component: {fileID: 1188575204161168199}
+  m_Layer: 0
+  m_Name: HomingShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204154460807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204154103463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204161168199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204154103463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a5b17557811c47abac0a65a46f52e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 20
+  m_bulletSpeed: 3
+  m_accelerationSpeed: 0.1
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 1
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_betweenDelay: 0.25
+  m_homingAngleSpeed: 90
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+--- !u!1 &1188575204279772652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204279417292}
+  - component: {fileID: 1188575204268478476}
+  m_Layer: 0
+  m_Name: 11WayAimingShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204279417292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204279772652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204268478476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204279772652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28eaa24639c0834489fe1cc2c45139c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 440
+  m_bulletSpeed: 2.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 11
+  m_centerAngle: 180
+  m_betweenAngle: 10
+  m_nextLineDelay: 0.2
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+  m_aiming: 1
+--- !u!1 &1188575204362584287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204362231039}
+  - component: {fileID: 1188575204355536191}
+  m_Layer: 0
+  m_Name: SinWaveBullet4WayAimingShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204362231039
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204362584287}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204355536191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204362584287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2ddf02055ec1411db6289ba92f82269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 200
+  m_bulletSpeed: 3
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 4
+  m_centerAngle: 0
+  m_waveRangeSize: 160
+  m_waveSpeed: 10
+  m_waveInverse: 0
+  m_betweenAngle: 5
+  m_nextLineDelay: 0.1
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+  m_aiming: 1
+--- !u!1 &1188575204378243188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204378078292}
+  - component: {fileID: 1188575204371137940}
+  m_Layer: 0
+  m_Name: 7WayAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204378078292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204378243188}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204371137940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204378243188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70962cc7743ab4dfa909076da4818d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 210
+  m_bulletSpeed: 3
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 7
+  m_centerAngle: 0
+  m_betweenAngle: 52
+  m_nextLineDelay: 0.1
+--- !u!1 &1188575204390959275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204390528139}
+  - component: {fileID: 1188575204383853899}
+  m_Layer: 0
+  m_Name: 20WayTurnAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204390528139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204390959275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204383853899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204390959275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70962cc7743ab4dfa909076da4818d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 400
+  m_bulletSpeed: 2.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: -45
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 20
+  m_centerAngle: 0
+  m_betweenAngle: 18
+  m_nextLineDelay: 0.15
+--- !u!1 &1188575204668252403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204667899091}
+  - component: {fileID: 1188575204679013651}
+  m_Layer: 0
+  m_Name: PaintLockOnShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204667899091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204668252403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204679013651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204668252403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05b6dcfb7058274392bac126f6de95e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 0
+  m_bulletSpeed: 2.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_paintDataText: {fileID: 4900000, guid: 20b6f9e224c0fa044a01a24371fd9fd5, type: 3}
+  m_paintCenterAngle: 180
+  m_betweenAngle: 3
+  m_nextLineDelay: 0.075
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+--- !u!1 &1188575204689065891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204689030019}
+  - component: {fileID: 1188575204699816515}
+  m_Layer: 0
+  m_Name: RandomAimingShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204689030019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204689065891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204699816515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204689065891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77c647d39dcc0fa4594a3202bf5b3d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 100
+  m_bulletSpeed: 3.5
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_randomCenterAngle: 180
+  m_randomRangeSize: 45
+  m_randomSpeedMin: 2
+  m_randomSpeedMax: 3.5
+  m_randomDelayMin: 0.01
+  m_randomDelayMax: 0.1
+  m_evenlyDistribute: 1
+  m_setTargetFromTag: 1
+  m_targetTagName: Player
+  m_randomSelectTagTarget: 0
+  m_nearestSelectTagTarget: 0
+  m_targetTransform: {fileID: 0}
+  m_aiming: 1
+--- !u!1 &1188575204766360758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204765874326}
+  - component: {fileID: 1188575204755099990}
+  m_Layer: 0
+  m_Name: SpiralRightShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204765874326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204766360758}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204755099990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204766360758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e529c4281f35345dfa6fe216b8a74985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 300
+  m_bulletSpeed: 2
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_startAngle: 0
+  m_shiftAngle: -6
+  m_betweenDelay: 0.01
+--- !u!1 &1188575204919461395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1188575204918975027}
+  - component: {fileID: 1188575204929156083}
+  m_Layer: 0
+  m_Name: RandomSpiralMultiShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1188575204918975027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204919461395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1188575204929156083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188575204919461395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f151fe19027f8724298182820de77aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 400
+  m_bulletSpeed: 0
+  m_accelerationSpeed: 1
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_spiralWayNum: 4
+  m_startAngle: 180
+  m_shiftAngle: 5
+  m_randomRangeSize: 30
+  m_randomSpeedMin: 2.5
+  m_randomSpeedMax: 3
+  m_randomDelayMin: 0.01
+  m_randomDelayMax: 0.05
+--- !u!1 &5640226517006098623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5640226517006204063}
+  - component: {fileID: 5640226516996412767}
+  m_Layer: 0
+  m_Name: SinWaveBullet9WayAllRangeShot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5640226517006204063
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5640226517006098623}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1188575203992413118}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5640226516996412767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5640226517006098623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4798005738f408dab48742c30d556d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_bulletPrefab: {fileID: 100000, guid: e67a72e051da149a6a88cdb89c2af076, type: 3}
+  m_bulletNum: 270
+  m_bulletSpeed: 3
+  m_accelerationSpeed: 0
+  m_useMaxSpeed: 0
+  m_maxSpeed: 0
+  m_useMinSpeed: 0
+  m_minSpeed: 0
+  m_accelerationTurn: 0
+  m_usePauseAndResume: 0
+  m_pauseTime: 0
+  m_resumeTime: 0
+  m_useAutoRelease: 0
+  m_autoReleaseTime: 10
+  m_shotFiredCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_shotFinishedCallbackEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  m_wayNum: 9
+  m_centerAngle: 0
+  m_waveRangeSize: 130
+  m_waveSpeed: 15
+  m_waveInverse: 0
+  m_betweenAngle: 40
+  m_nextLineDelay: 0.1

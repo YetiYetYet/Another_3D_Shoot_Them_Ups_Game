@@ -72,7 +72,7 @@ public class SimpleController : MonoBehaviour
         _currentClip =  SkillsManager.Instance.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
         animator.SetTrigger("PlaySkill");
         AnimatorClipInfo animationClipInfo = SkillsManager.Instance.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
-        while (_currentClip.clip.name == animationClipInfo.clip.name)
+        while (_currentClip.clip.name == animationClipInfo.clip.name && !_currentClip.clip.name.ToLower().Contains("skill"))
         {
             animationClipInfo = SkillsManager.Instance.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
             yield return null;
@@ -83,7 +83,7 @@ public class SimpleController : MonoBehaviour
 
         yield return new WaitForSeconds(animationClipInfo.clip.length / animator.GetFloat("CastingSpeed"));
         
-        Debug.Log("Casting Spell Finish");
+        //Debug.Log("Casting Spell Finish");
         isCastingSpell = false;
         //Enemy.Instance.TakeDamage(SkillsManager.Instance.actualSkill.damage);
     }
