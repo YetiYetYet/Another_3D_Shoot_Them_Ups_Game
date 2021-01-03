@@ -27,10 +27,9 @@ public class Enemy : MonoBehaviour
     #endregion
     public int hitPointsPerStates = 100;
     public int numberState = 3;
-    [ReadOnly]
-    public int actualLife;
-    [ReadOnly]
-    public int currentState;
+    [ReadOnly] public int actualLife;
+    [ReadOnly] public int currentState;
+    [ReadOnly] public bool isDead;
 
     public Animator animator;
     public bool lookAtPlayer = true;
@@ -58,6 +57,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if(isDead) return;
         actualLife -= damage;
         if (actualLife <= 0)
         {
@@ -72,9 +72,13 @@ public class Enemy : MonoBehaviour
             }
             else
             {
+                lookAtPlayer = false;
+                isDead = true;
                 Die?.Invoke(this);
+                animator.SetTrigger("Die");
                 Debug.Log("Victory");
             }
         }
     }
+    
 }

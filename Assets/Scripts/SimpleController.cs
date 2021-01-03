@@ -46,7 +46,8 @@ public class SimpleController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            CastSpell(0);
+            if (!Enemy.Instance.isDead)
+                CastSpell(0);
         }
     }
 
