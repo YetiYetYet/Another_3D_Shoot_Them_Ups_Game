@@ -10,6 +10,17 @@ public class WaweShootController : MonoBehaviour
     private List<UbhBaseShot> UbhBaseShotsChild;
     [ReadOnly]
     public int actualShotCtrlIndex;
+
+    private void OnEnable()
+    {
+        
+    }
+
+    private void OnDisable()
+    {
+        
+    }
+
     private void Start()
     {
         UbhBaseShotsChild = new List<UbhBaseShot>();
@@ -46,6 +57,11 @@ public class WaweShootController : MonoBehaviour
         {
             actualShotCtrlIndex = 0;
         }
+        UbhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(true);
+    }
+
+    public void StartPattern()
+    {
         UbhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(true);
     }
 }

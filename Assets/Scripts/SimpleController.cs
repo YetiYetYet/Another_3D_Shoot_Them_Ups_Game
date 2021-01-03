@@ -20,6 +20,7 @@ public class SimpleController : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+        if(GameManager.Instance.currentState != GameManager.GameState.Playing) return;
         if (!isCastingSpell)
         {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.Q))
@@ -44,6 +45,7 @@ public class SimpleController : MonoBehaviour
 
     private void Update()
     {
+        if(GameManager.Instance.currentState != GameManager.GameState.Playing) return;
         if (Input.GetMouseButtonDown(0))
         {
             if (!Enemy.Instance.isDead)
@@ -57,7 +59,6 @@ public class SimpleController : MonoBehaviour
         {
             return false;
         }
-        isCastingSpell = true;
         SkillsManager.Instance.LoadSkill(index);
         animator.SetInteger("SkillNumber", index+1);
         animator.SetFloat("CastingSpeed", SkillsManager.Instance.actualSkill.castingSpeed);
@@ -67,13 +68,14 @@ public class SimpleController : MonoBehaviour
 
     IEnumerator CastingSpell()
     {
+        if (isCastingSpell) yield break;
         isCastingSpell = true;
         
         // Wait until transition is finish (It's a little tricky, there is probably a better option)
         _currentClip =  SkillsManager.Instance.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
         animator.SetTrigger("PlaySkill");
         AnimatorClipInfo animationClipInfo = SkillsManager.Instance.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
-        while (_currentClip.clip.name == animationClipInfo.clip.name && !_currentClip.clip.name.ToLower().Contains("skill"))
+        while (!animationClipInfo.clip.name.ToLower().Contains("skill"))
         {
             animationClipInfo = SkillsManager.Instance.gameObject.GetComponent<Animator>().GetCurrentAnimatorClipInfo(0)[0];
             yield return null;

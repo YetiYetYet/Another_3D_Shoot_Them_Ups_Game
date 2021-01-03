@@ -13,12 +13,14 @@ public class ShootManager : MonoBehaviour
     {
         Enemy.NextState += ToNextState;
         Enemy.Die += OnEnemyDeath;
+        GameManager.SwapStateEvent += OnSwapState;
     }
 
     private void OnDisable()
     {
         Enemy.NextState -= ToNextState;
         Enemy.Die -= OnEnemyDeath;
+        GameManager.SwapStateEvent -= OnSwapState;
     }
 
     // Start is called before the first frame update
@@ -34,9 +36,21 @@ public class ShootManager : MonoBehaviour
         {
             wawes[i].gameObject.SetActive(false);
         }
-        StartCurrentWawe();
     }
 
+    public void OnSwapState(GameManager gameManager)
+    {
+        if (gameManager.currentState == GameManager.GameState.Playing)
+        {
+            StartCurrentWawe();
+        }
+
+        if (gameManager.currentState == GameManager.GameState.GameOver ||
+            gameManager.currentState == GameManager.GameState.Victory)
+        {
+            StopCurrentWawe();
+        }
+    }
     public void OnEnemyDeath(Enemy enemy)
     {
         StopCurrentWawe();
