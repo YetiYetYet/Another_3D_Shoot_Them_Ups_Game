@@ -64,7 +64,7 @@ public class ShootManager : MonoBehaviour
             return;
         }
         currentWawe = wawes[enemy.currentState-1];
-        StartCurrentWawe();
+        //StartCurrentWawe();
 
     }
 

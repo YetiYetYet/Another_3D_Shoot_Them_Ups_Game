@@ -14,8 +14,13 @@ public class UiManager : MonoBehaviour
     public Slider lifePlayerBar;
     public Text lifePlayerText;
     public Text maxLifePlayerText;
-    
-    
+
+    public Canvas victory;
+    public Canvas gameOver;
+    public Canvas pause;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +35,10 @@ public class UiManager : MonoBehaviour
         lifeEnemyBar.value = _player.health;
         lifePlayerText.text = _player.health.ToString();
         maxLifePlayerText.text = _player.maxHealth.ToString();
+        
+        victory.gameObject.SetActive(false);
+        gameOver.gameObject.SetActive(false);
+        pause.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -40,5 +49,27 @@ public class UiManager : MonoBehaviour
 
         lifePlayerBar.value = _player.health;
         lifePlayerText.text = _player.health.ToString();
+    }
+
+    public void OnVictory()
+    {
+        victory.gameObject.SetActive(true);
+    }
+
+    public void OnGameOver()
+    {
+        gameOver.gameObject.SetActive(true);
+    }
+
+    public void OnPause()
+    {
+        pause.gameObject.SetActive(true);
+    }
+
+    public void OnResume()
+    {
+        victory.gameObject.SetActive(false);
+        gameOver.gameObject.SetActive(false);
+        pause.gameObject.SetActive(false);
     }
 }

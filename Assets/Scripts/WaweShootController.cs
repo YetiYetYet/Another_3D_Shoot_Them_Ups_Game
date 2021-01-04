@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class WaweShootController : MonoBehaviour
 {
-    [ReadOnly]
-    private List<UbhBaseShot> UbhBaseShotsChild;
+    [SerializeField, ReadOnly]
+    private List<UbhBaseShot> ubhBaseShotsChild;
     [ReadOnly]
     public int actualShotCtrlIndex;
 
@@ -23,45 +23,46 @@ public class WaweShootController : MonoBehaviour
 
     private void Start()
     {
-        UbhBaseShotsChild = new List<UbhBaseShot>();
+        ubhBaseShotsChild = new List<UbhBaseShot>();
         //Debug.Log(gameObject.GetComponentsInChildren<UbhBaseShot>().Length);
         foreach (var ubhShotCtrl in gameObject.GetComponentsInChildren<UbhBaseShot>())
         {
-            UbhBaseShotsChild.Add(ubhShotCtrl);
+            ubhBaseShotsChild.Add(ubhShotCtrl);
         }
 
-        if (UbhBaseShotsChild.Count == 0)
+        if (ubhBaseShotsChild.Count == 0)
         {
             Debug.LogError("No Pattern Found in child");
         }
 
         actualShotCtrlIndex = 0;
 
-        foreach (var ubhBaseShot in UbhBaseShotsChild)
+        foreach (var ubhBaseShot in ubhBaseShotsChild)
         {
             ubhBaseShot.m_shotFinishedCallbackEvents.AddListener(NextPattern);
         }
 
-        for (int i = 1; i < UbhBaseShotsChild.Count; i++)
+        for (int i = 1; i < ubhBaseShotsChild.Count; i++)
         {
-            UbhBaseShotsChild[i].gameObject.SetActive(false);
+            ubhBaseShotsChild[i].gameObject.SetActive(false);
         }
     }
 
     public void NextPattern()
     {
         //Debug.Log("NextPatternCall");
-        UbhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(false);
+        ubhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(false);
         actualShotCtrlIndex++;
-        if (actualShotCtrlIndex > UbhBaseShotsChild.Count-1)
+        if (actualShotCtrlIndex > ubhBaseShotsChild.Count-1)
         {
             actualShotCtrlIndex = 0;
         }
-        UbhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(true);
+        ubhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(true);
     }
 
     public void StartPattern()
     {
-        UbhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(true);
+        
+        ubhBaseShotsChild[actualShotCtrlIndex].gameObject.SetActive(true);
     }
 }

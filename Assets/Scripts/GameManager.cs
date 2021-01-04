@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+    
     public enum GameState
     {
         Pause,
@@ -34,21 +35,29 @@ public class GameManager : MonoBehaviour
     }
 
     [ReadOnly] public GameState currentState;
+    public Camera cinematicCamera;
     public static event Action<GameManager> SwapStateEvent;
 
     public void OnEnable()
     {
         Player.PlayerDeath += OnPlayerDeath;
+        Enemy.NextState += OnNextState;
+        Enemy.Die += OnEnemyDie;
     }
 
     public void OnDisable()
     {
         Player.PlayerDeath -= OnPlayerDeath;
+        Enemy.NextState -= OnNextState;
+        Enemy.Die -= OnEnemyDie;
     }
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
+        cinematicCamera.gameObject.SetActive(true);
         currentState = GameState.Cinematic;
     }
 
@@ -59,11 +68,27 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         SwapState(GameState.Playing);
+        cinematicCamera.gameObject.SetActive(false);
     }
     public void SwapState(GameState gameState)
     {
         currentState = gameState;
         SwapStateEvent?.Invoke(this);
+        if (currentState == GameState.Cinematic)
+        {
+            DialogueManager.Instance.StartDialogue();
+        }
+    }
+    
+    private void OnEnemyDie(Enemy enemy)
+    {
+        SwapState(GameState.Victory);
+    }
+    
+    private void OnNextState(Enemy enemy)
+    {
+        SwapState(GameState.Cinematic);
+        DialogueManager.Instance.StartDialogue();
     }
 
     // Update is called once per frame
