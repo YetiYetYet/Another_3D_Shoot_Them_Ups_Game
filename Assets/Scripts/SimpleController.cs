@@ -45,12 +45,22 @@ public class SimpleController : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Escape Key");
+            if(GameManager.Instance.currentState == GameManager.GameState.Playing)
+                GameManager.Instance.OnPause();
+            else if(GameManager.Instance.currentState == GameManager.GameState.Pause)
+                GameManager.Instance.ResumeGame();
+        }
+        
         if(GameManager.Instance.currentState != GameManager.GameState.Playing) return;
         if (Input.GetMouseButtonDown(0))
         {
             if (!Enemy.Instance.isDead)
                 CastSpell(0);
         }
+        
     }
 
     private bool CastSpell(int index)

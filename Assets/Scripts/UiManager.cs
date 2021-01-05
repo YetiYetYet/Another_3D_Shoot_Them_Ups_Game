@@ -5,6 +5,24 @@ using UnityEngine.UI;
 
 public class UiManager : MonoBehaviour
 {
+    #region Singleton
+    
+    private static UiManager _instance;
+    public static UiManager Instance => _instance;
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            _instance = this;
+            //DontDestroyOnLoad(this.gameObject);
+        }
+    }
+    #endregion
     private Enemy _enemy;
     public Slider lifeEnemyBar;
     public Text lifeEnemyText;

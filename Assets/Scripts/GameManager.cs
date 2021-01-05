@@ -64,11 +64,14 @@ public class GameManager : MonoBehaviour
     public void OnPlayerDeath(Player player)
     {
         SwapState(GameState.GameOver);
+        UiManager.Instance.OnGameOver();
     }
     public void ResumeGame()
     {
         SwapState(GameState.Playing);
         cinematicCamera.gameObject.SetActive(false);
+        UiManager.Instance.OnResume();
+        Time.timeScale = 1f;
     }
     public void SwapState(GameState gameState)
     {
@@ -83,12 +86,25 @@ public class GameManager : MonoBehaviour
     private void OnEnemyDie(Enemy enemy)
     {
         SwapState(GameState.Victory);
+        UiManager.Instance.OnVictory();
+    }
+
+    public void OnPause()
+    {
+        SwapState(GameState.Pause);
+        UiManager.Instance.OnPause();
+        Time.timeScale = 0f;
     }
     
     private void OnNextState(Enemy enemy)
     {
         SwapState(GameState.Cinematic);
         DialogueManager.Instance.StartDialogue();
+    }
+
+    public void ToMainMenu()
+    {
+        //TODO:
     }
 
     // Update is called once per frame
