@@ -47,7 +47,6 @@ public class SimpleController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Escape Key");
             if(GameManager.Instance.currentState == GameManager.GameState.Playing)
                 GameManager.Instance.OnPause();
             else if(GameManager.Instance.currentState == GameManager.GameState.Pause)
@@ -71,6 +70,7 @@ public class SimpleController : MonoBehaviour
         }
         SkillsManager.Instance.LoadSkill(index);
         animator.SetInteger("SkillNumber", index+1);
+        animator.SetBool("IsMoving", false);
         animator.SetFloat("CastingSpeed", SkillsManager.Instance.actualSkill.castingSpeed);
         StartCoroutine(nameof(CastingSpell));
         return true;

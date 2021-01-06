@@ -7,10 +7,12 @@ public class Bullet : MonoBehaviour
 {
     public int damage;
     public bool useHit;
+    public float maxLifeTime = 8f;
     private GameObject _hit;
     private float _hitOffset = 0f;
     private bool _useFirePointRotation;
     private Vector3 _rotationOffset = new Vector3(0, 0, 0);
+    
 
     private void OnEnable()
     {
@@ -30,6 +32,21 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var projectileMoverScript = gameObject.GetComponentInChildren<ProjectileMover>();
+        projectileMoverScript.gameObject.transform.localPosition = new Vector3(0, 0, 0);
+        projectileMoverScript.gameObject.GetComponent<SphereCollider>().enabled = false;
+        projectileMoverScript.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        //Debug.Log(projectileMoverScript.gameObject.GetComponentsInChildren<ParticleSystem>().Length);
+        foreach (var particleSystemChild in projectileMoverScript.gameObject.GetComponentsInChildren<ParticleSystem>())
+        {
+            /*var destroyScript = particleSystemChild.GetComponent<AutoDestroyPS>();
+            if (destroyScript != null) destroyScript.enabled = false;*/
+            particleSystemChild.tag = "Bullet";
+            var main = particleSystemChild.main;
+            main.loop = true;
+        }
+        projectileMoverScript.enabled = false;
+
         if (damage <= 0)
         {
             Debug.LogWarning("Damage of projectiles is <= 0, are you sure you want this ?");
@@ -37,12 +54,13 @@ public class Bullet : MonoBehaviour
 
         if (useHit)
         {
-            var projectileMoverScript = gameObject.GetComponentInChildren<ProjectileMover>();
             _hit = projectileMoverScript.hit;
             _hitOffset = projectileMoverScript.hitOffset;
             _useFirePointRotation = projectileMoverScript.UseFirePointRotation;
             _rotationOffset = projectileMoverScript.rotationOffset;
         }
+        
+        Destroy(gameObject, maxLifeTime);
         
     }
 

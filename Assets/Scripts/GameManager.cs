@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     [ReadOnly] public GameState currentState;
     public Camera cinematicCamera;
+    public string nextLevel;
     public static event Action<GameManager> SwapStateEvent;
 
     public void OnEnable()
@@ -59,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         cinematicCamera.gameObject.SetActive(true);
         currentState = GameState.Cinematic;
+        Time.timeScale = 1f;
     }
 
     public void OnPlayerDeath(Player player)
@@ -86,6 +89,7 @@ public class GameManager : MonoBehaviour
     private void OnEnemyDie(Enemy enemy)
     {
         SwapState(GameState.Victory);
+        Player.Instance.playerAnimator.SetTrigger("Victory");
         UiManager.Instance.OnVictory();
     }
 
@@ -104,7 +108,17 @@ public class GameManager : MonoBehaviour
 
     public void ToMainMenu()
     {
-        //TODO:
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ToNextLevel()
+    {
+        SceneManager.LoadScene(nextLevel);
     }
 
     // Update is called once per frame

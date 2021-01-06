@@ -15,8 +15,10 @@ public class DestroyArea : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("Exit : " +  other.name);
         if (other.CompareTag("Bullet"))
         {
+            
             Destroy(other.gameObject);
         }
     }
