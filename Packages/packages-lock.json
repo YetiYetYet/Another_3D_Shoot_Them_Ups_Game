@@ -1,17 +1,21 @@
 {
   "dependencies": {
     "com.unity.ads": {
-      "version": "2.0.8",
+      "version": "3.5.0",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.analytics": {
-      "version": "3.2.3",
+      "version": "3.5.3",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.cinemachine": {
@@ -52,14 +56,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.2",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.package-manager-ui": {
-      "version": "2.0.8",
+      "version": "1.2.3",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -73,10 +70,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.purchasing": {
-      "version": "2.0.3",
+      "version": "2.1.1",
       "depth": 0,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "com.unity.ugui": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.core": {
@@ -144,7 +143,7 @@
     },
     "com.unity.ugui": {
       "version": "1.0.0",
-      "depth": 0,
+      "depth": 1,
       "source": "builtin",
       "dependencies": {
         "com.unity.modules.ui": "1.0.0",
