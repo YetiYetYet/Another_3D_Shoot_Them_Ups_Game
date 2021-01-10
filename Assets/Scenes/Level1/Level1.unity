@@ -2384,6 +2384,11 @@ MonoBehaviour:
     AdditionalEffect: {fileID: 0}
     AdditionalEffectAttachPoint: {fileID: 0}
     AdditionalEffect_DestroyTime: 10
+--- !u!95 &452723461 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: b005a7e96127fbf4c803dc829144015f, type: 3}
+  m_PrefabInstance: {fileID: 452723455}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &473432721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,7 +3762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   isCastingSpell: 0
-  animator: {fileID: 95485628432669355}
+  animator: {fileID: 452723461}
 --- !u!114 &623101285
 MonoBehaviour:
   m_ObjectHideFlags: 0
