@@ -84,6 +84,8 @@ public class GameManager : MonoBehaviour
         {
             DialogueManager.Instance.StartDialogue();
         }
+        
+        
     }
     
     private void OnEnemyDie(Enemy enemy)

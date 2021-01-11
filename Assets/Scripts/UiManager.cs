@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,11 +35,21 @@ public class UiManager : MonoBehaviour
     public Text lifePlayerText;
     public Text maxLifePlayerText;
 
+    public Canvas gameUi;
+    public DOTweenAnimation ShowGameUi;
     public Canvas victory;
     public Canvas gameOver;
     public Canvas pause;
 
+    public void OnEnable()
+    {
+        GameManager.SwapStateEvent += OnSwap;
+    }
 
+    public void OnDisable()
+    {
+        GameManager.SwapStateEvent -= OnSwap;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -57,16 +69,20 @@ public class UiManager : MonoBehaviour
         victory.gameObject.SetActive(false);
         gameOver.gameObject.SetActive(false);
         pause.gameObject.SetActive(false);
+        gameUi.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        lifeEnemyBar.value = _enemy.actualLife;
-        lifeEnemyText.text = _enemy.actualLife.ToString();
+        if(gameUi.enabled)
+        {
+            lifeEnemyBar.value = _enemy.actualLife;
+            lifeEnemyText.text = _enemy.actualLife.ToString();
 
-        lifePlayerBar.value = _player.health;
-        lifePlayerText.text = _player.health.ToString();
+            lifePlayerBar.value = _player.health;
+            lifePlayerText.text = _player.health.ToString();
+        }
     }
 
     public void OnVictory()
@@ -89,5 +105,20 @@ public class UiManager : MonoBehaviour
         victory.gameObject.SetActive(false);
         gameOver.gameObject.SetActive(false);
         pause.gameObject.SetActive(false);
+    }
+
+    public void OnSwap(GameManager gameManager)
+    {
+        /*
+        bool toFade = gameManager.currentState == GameManager.GameState.Playing ? true : false;
+        ShowGameUi.
+        ShowGameUi.DOPlay();
+        */
+            
+    }
+
+    public void DisableGameUI()
+    {
+        gameUi.gameObject.SetActive(false);
     }
 }
