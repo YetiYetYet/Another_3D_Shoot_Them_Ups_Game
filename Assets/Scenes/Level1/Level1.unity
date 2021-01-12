@@ -5644,6 +5644,8 @@ MonoBehaviour:
   lifePlayerBar: {fileID: 510407459}
   lifePlayerText: {fileID: 1649022840}
   maxLifePlayerText: {fileID: 100863058}
+  gameUi: {fileID: 0}
+  ShowGameUi: {fileID: 0}
   victory: {fileID: 1105694891}
   gameOver: {fileID: 982063125}
   pause: {fileID: 322718385}
@@ -9185,7 +9187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1633135633
 Light:
   m_ObjectHideFlags: 0
