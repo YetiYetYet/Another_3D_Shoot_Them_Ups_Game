@@ -36,7 +36,8 @@ public class UiManager : MonoBehaviour
     public Text maxLifePlayerText;
 
     public Canvas gameUi;
-    public DOTweenAnimation ShowGameUi;
+    private CanvasGroup _gameUiCanvasGroup;
+    public float fadeDuration;
     public Canvas victory;
     public Canvas gameOver;
     public Canvas pause;
@@ -70,6 +71,9 @@ public class UiManager : MonoBehaviour
         gameOver.gameObject.SetActive(false);
         pause.gameObject.SetActive(false);
         gameUi.gameObject.SetActive(true);
+        _gameUiCanvasGroup = gameUi.GetComponent<CanvasGroup>();
+        _gameUiCanvasGroup.alpha = 0;
+
     }
 
     // Update is called once per frame
@@ -109,11 +113,14 @@ public class UiManager : MonoBehaviour
 
     public void OnSwap(GameManager gameManager)
     {
-        /*
-        bool toFade = gameManager.currentState == GameManager.GameState.Playing ? true : false;
-        ShowGameUi.
-        ShowGameUi.DOPlay();
-        */
+        if (gameManager.currentState == GameManager.GameState.Playing)
+        {
+            _gameUiCanvasGroup.DOFade(1, fadeDuration);
+        }
+        else
+        {
+            _gameUiCanvasGroup.DOFade(0, 1);
+        }
             
     }
 
