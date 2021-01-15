@@ -964,7 +964,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -1793,7 +1793,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -5778,7 +5778,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -6783,7 +6783,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -6909,7 +6909,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -9320,7 +9320,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -10642,7 +10642,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -11008,7 +11008,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -16271,7 +16271,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -16602,7 +16602,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -17589,7 +17589,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -17782,7 +17782,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
@@ -17818,7 +17818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_bulletPrefab: {fileID: 4958675784275019253, guid: c96128e73f21da9438e6e0b05d288f1e, type: 3}
-  m_bulletNum: 20
+  m_bulletNum: 1
   m_bulletSpeed: 3
   m_accelerationSpeed: 0.1
   m_useMaxSpeed: 0
@@ -22610,7 +22610,7 @@ MonoBehaviour:
   m_startOnAwake: 0
   m_startOnAwakeDelay: 1
   m_startOnEnable: 1
-  m_startOnEnableDelay: 1
+  m_startOnEnableDelay: 2
   m_loop: 0
   m_atRandom: 0
   m_shotList:
