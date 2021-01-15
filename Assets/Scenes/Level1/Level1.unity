@@ -959,13 +959,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 85731227}
@@ -981,7 +981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95441531}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1843112806}
@@ -1752,7 +1752,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245722145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1843112806}
@@ -1788,13 +1788,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 235477441}
@@ -1832,13 +1832,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 281818937}
@@ -1854,7 +1854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274744025}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1692864785}
@@ -2195,13 +2195,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 356310354}
@@ -2217,7 +2217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361801906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 622283720}
@@ -5737,7 +5737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904666312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 622283720}
@@ -5773,13 +5773,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 893413672}
@@ -6778,13 +6778,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 973527432}
@@ -6800,7 +6800,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984263784}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1692864785}
@@ -6868,7 +6868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1052051130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 622283720}
@@ -6904,13 +6904,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 1041855322}
@@ -9279,7 +9279,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564891428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1692864785}
@@ -9315,13 +9315,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 1575627972}
@@ -10637,13 +10637,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 1727488460}
@@ -10659,7 +10659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717244972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1692864785}
@@ -10967,7 +10967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1759452654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1843112806}
@@ -11003,13 +11003,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 1752393742}
@@ -16230,7 +16230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893670643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1692864785}
@@ -16266,13 +16266,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 1886612243}
@@ -16561,7 +16561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909255768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1843112806}
@@ -16597,13 +16597,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 1902156728}
@@ -17548,7 +17548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063371115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 622283720}
@@ -17584,13 +17584,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 2052128395}
@@ -17777,13 +17777,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 2110737856}
@@ -17799,7 +17799,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103654432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1843112806}
@@ -22605,13 +22605,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f0f29fa90c15e4ca1c2e77ce62f18a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_axisMove: 0
+  m_axisMove: 1
   m_inheritAngle: 0
-  m_startOnAwake: 1
+  m_startOnAwake: 0
   m_startOnAwakeDelay: 1
-  m_startOnEnable: 0
+  m_startOnEnable: 1
   m_startOnEnableDelay: 1
-  m_loop: 1
+  m_loop: 0
   m_atRandom: 0
   m_shotList:
   - m_shotObj: {fileID: 6789377631228607448}
@@ -22627,7 +22627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6789377631238311480}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 622283720}
