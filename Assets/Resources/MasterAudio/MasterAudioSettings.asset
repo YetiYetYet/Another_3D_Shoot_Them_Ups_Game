@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a4818fd8d23da8498090db15598f030, type: 3}
   m_Name: MasterAudioSettings
   m_EditorClassIdentifier: 
-  UseDbScale: 0
+  UseDbScale: 1
   RemoveUnplayedDueToProbabilityVariation: 1
   UseCentsPitch: 0
   HideLogoNav: 0

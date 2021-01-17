@@ -27,6 +27,13 @@ public class Player : MonoBehaviour
 
     public int maxHealth = 100;
     public int health = 100;
+
+    public int maxMana = 100;
+    public int mana = 100;
+    public int manaRegeneration = 1;
+    public float speedManaRegeneration = 0.2f;
+    public bool canRegen = true;
+
     public bool isDead = false;
     [Required] public Animator playerAnimator;
     [Required] public Collider playerCollider;
@@ -48,12 +55,25 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(ManaRegeneration());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ManaRegeneration()
     {
-        
+        while (!isDead)
+        {
+            if (mana < maxMana && canRegen)
+            {
+                if (mana + manaRegeneration > maxMana)
+                {
+                    mana = maxMana;
+                }
+                else
+                {
+                    mana += manaRegeneration;
+                }
+            }
+            yield return new WaitForSeconds(speedManaRegeneration);
+        } 
     }
 }

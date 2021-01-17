@@ -6,6 +6,7 @@ public class Skill
 {
       public string name;
       public int damage;
+      public int manaCost;
       public float castingSpeed;
 
       //public RFX4_EffectEvent rfx4EffectEvent;

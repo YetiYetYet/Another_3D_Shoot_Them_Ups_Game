@@ -31,9 +31,14 @@ public class UiManager : MonoBehaviour
     public Text maxLifeEnemyText;
 
     private Player _player;
+    
     public Slider lifePlayerBar;
     public Text lifePlayerText;
     public Text maxLifePlayerText;
+
+    public Slider manaPlayerBar;
+    public Text manaPlayerText;
+    public Text maxManaPlayerText;
 
     public Canvas gameUi;
     private CanvasGroup _gameUiCanvasGroup;
@@ -66,6 +71,12 @@ public class UiManager : MonoBehaviour
         lifeEnemyBar.value = _player.health;
         lifePlayerText.text = _player.health.ToString();
         maxLifePlayerText.text = _player.maxHealth.ToString();
+
+        manaPlayerBar.maxValue = _player.maxMana;
+        manaPlayerText.text = _player.mana.ToString();
+        maxManaPlayerText.text = _player.maxMana.ToString();
+        
+        
         
         victory.gameObject.SetActive(false);
         gameOver.gameObject.SetActive(false);
@@ -86,6 +97,9 @@ public class UiManager : MonoBehaviour
 
             lifePlayerBar.value = _player.health;
             lifePlayerText.text = _player.health.ToString();
+
+            manaPlayerBar.value = _player.mana;
+            manaPlayerText.text = _player.mana.ToString();
         }
     }
 

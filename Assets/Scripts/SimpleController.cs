@@ -8,13 +8,14 @@ public class SimpleController : MonoBehaviour
     public float speed = 0.1f;
     
     public bool isCastingSpell;
-    public Animator animator;
+    private Animator animator;
 
     private  AnimatorClipInfo _currentClip;
     // Start is called before the first frame update
     void Start()
     {
         isCastingSpell = false;
+        animator = Player.Instance.playerAnimator;
     }
 
     // Update is called once per frame
@@ -69,6 +70,8 @@ public class SimpleController : MonoBehaviour
             return false;
         }
         SkillsManager.Instance.LoadSkill(index);
+        if (Player.Instance.mana < SkillsManager.Instance.actualSkill.manaCost) return false;
+        Player.Instance.mana -= SkillsManager.Instance.actualSkill.manaCost;
         animator.SetInteger("SkillNumber", index+1);
         animator.SetBool("IsMoving", false);
         animator.SetFloat("CastingSpeed", SkillsManager.Instance.actualSkill.castingSpeed);
