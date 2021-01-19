@@ -60,6 +60,11 @@ public class SimpleController : MonoBehaviour
             if (!Enemy.Instance.isDead)
                 CastSpell(0);
         }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            CastSpell(1);
+        }
         
     }
 

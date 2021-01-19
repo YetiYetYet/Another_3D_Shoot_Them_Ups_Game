@@ -59,7 +59,7 @@ MonoBehaviour:
   - id: 2
     fields:
     - title: Name
-      value: Enemy
+      value: Remi
       type: 0
       typeString: 
     - title: Pictures
