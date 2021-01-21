@@ -8,7 +8,7 @@ This is a little game where you need to avoid bullet and shoot enemy with your s
  
  ## Assets used
  - Dialogue System
- - Dance MoCap Collections (Dance animation)
+ - Dance MoCap Collections (Dances animations)
  - Dotween (Ui animation)
  - Master Audio AAA
  - UniBulletHell (Bullet Pattern)
